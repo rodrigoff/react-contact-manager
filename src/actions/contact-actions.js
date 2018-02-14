@@ -1,6 +1,6 @@
 import { client } from "./";
 
-const url = "/contacts";
+const url = "/contact";
 
 export function fetchContacts() {
   return dispatch => {

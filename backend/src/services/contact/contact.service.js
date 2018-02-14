@@ -2,10 +2,8 @@
 const createService = require('feathers-mongoose');
 const createModel = require('../../models/contact.model');
 const hooks = require('./contact.hooks');
-const filters = require('./contact.filters');
 
-module.exports = function () {
-  const app = this;
+module.exports = function (app) {
   const Model = createModel(app);
   const paginate = app.get('paginate');
 
@@ -16,14 +14,10 @@ module.exports = function () {
   };
 
   // Initialize our service with any options it requires
-  app.use('/contacts', createService(options));
+  app.use('/contact', createService(options));
 
   // Get our initialized service so that we can register hooks and filters
-  const service = app.service('contacts');
+  const service = app.service('contact');
 
   service.hooks(hooks);
-
-  if (service.filter) {
-    service.filter(filters);
-  }
 };

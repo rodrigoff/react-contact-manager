@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+
 import ConfirmationModal from "./ConfirmationModal";
 
 export class ModalManager extends Component {

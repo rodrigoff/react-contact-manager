@@ -1,5 +1,6 @@
 import React from "react";
 import { Card } from "semantic-ui-react";
+
 import ContactCard from "./ContactCard";
 
 export default function ContactList({ contacts, confirmDeleteContact, deleteContact }) {

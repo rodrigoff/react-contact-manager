@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Confirm } from "semantic-ui-react";
-import { closeModal } from "../actions/modal-actions";
+
+import { closeModal } from "../actions/modalActions";
 
 export class ConfirmationModal extends Component {
   confirmModal = () => {

@@ -2,13 +2,14 @@ import React, { Component } from "react";
 import { Redirect } from "react-router";
 import { SubmissionError } from "redux-form";
 import { connect } from "react-redux";
+
+import ContactForm from "../components/ContactForm";
 import {
   newContact,
   saveContact,
   fetchContact,
   updateContact
-} from "../actions/contact-actions";
-import ContactForm from "../components/ContactForm";
+} from "../actions/contactActions";
 
 class ContactFormPage extends Component {
   state = {

@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+
 import ContactList from "../components/ContactList";
-import { fetchContacts, deleteContact } from "../actions/contact-actions";
-import { openModal } from "../actions/modal-actions";
+import { fetchContacts, deleteContact } from "../actions/contactActions";
+import { openModal } from "../actions/modalActions";
 
 class ContactListPage extends Component {
   componentDidMount() {

@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 import { reducer as formReducer } from "redux-form";
-import ContactReducer from "./contact-reducer";
-import ModalReducer from "./modal-reducer";
+import ContactReducer from "./contactReducer";
+import ModalReducer from "./modalReducer";
 
 const reducers = {
   contactStore: ContactReducer,

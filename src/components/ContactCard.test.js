@@ -2,6 +2,7 @@ import React from "react";
 import { mount } from "enzyme";
 import { BrowserRouter } from "react-router-dom";
 import { Card } from "semantic-ui-react";
+
 import ContactCard from "./ContactCard";
 
 test("ContactCard renders a contact", () => {

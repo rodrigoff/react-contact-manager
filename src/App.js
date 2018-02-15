@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { NavLink, Route } from "react-router-dom";
 import { Container } from "semantic-ui-react";
+
 import ModalManager from "./components/ModalManager";
 import ContactListPage from "./pages/ContactListPage";
 import ContactFormPage from "./pages/ContactFormPage";
